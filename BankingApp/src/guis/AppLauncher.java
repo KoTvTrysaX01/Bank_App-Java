@@ -9,6 +9,8 @@ public class AppLauncher {
             @Override
             public void run(){
                 new LoginGui().setVisible(true);
+
+                new RegisterGui().setVisible(true);
             }
         });
     }

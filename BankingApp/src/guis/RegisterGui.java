@@ -3,10 +3,10 @@ package guis;
 import javax.swing.*;
 import java.awt.*;
 
-public class LoginGui extends BaseFrame{
+public class RegisterGui extends BaseFrame{
 
-    public LoginGui(){
-        super("Banking App");
+    public RegisterGui(){
+        super("Banking App Register");
     }
 
     @Override
@@ -29,25 +29,34 @@ public class LoginGui extends BaseFrame{
         add(usernameField);
 
         JLabel passwordLabel = new JLabel("Password:");
-        passwordLabel.setBounds(20, 280, getWidth() -50, 24);
+        passwordLabel.setBounds(20, 220, getWidth() -50, 24);
         passwordLabel.setFont(new Font("Dialog", Font.PLAIN, 20));
         add(passwordLabel);
 
         JPasswordField passwordField = new JPasswordField();
-        passwordField.setBounds(20, 320, getWidth() -50, 40);
+        passwordField.setBounds(20, 260, getWidth() -50, 40);
         passwordField.setFont(new Font("Dialog", Font.PLAIN, 28));
         add(passwordField);
 
-        JButton loginButton = new JButton("Login");
-        loginButton.setBounds(20, 460, getWidth() - 50, 40);
-        loginButton.setFont(new Font("Dialog", Font.BOLD, 20));
-        add(loginButton);
+        JLabel rePasswordLabel = new JLabel("Re-type Password:");
+        rePasswordLabel.setBounds(20, 320, getWidth() -50, 40);
+        rePasswordLabel.setFont(new Font("Dialog", Font.PLAIN, 20));
+        add(rePasswordLabel);
+
+        JPasswordField rePasswordField = new JPasswordField();
+        rePasswordField.setBounds(20, 360, getWidth() -50, 40);
+        rePasswordField.setFont(new Font("Dialog", Font.PLAIN, 28));
+        add(rePasswordField);
+
+        JButton registerButton = new JButton("Register");
+        registerButton.setBounds(20, 460, getWidth() - 50, 40);
+        registerButton.setFont(new Font("Dialog", Font.BOLD, 20));
+        add(registerButton);
 
         JLabel registerLabel = new JLabel("<html><a href=\"#\">Don't have an account? Register here</a></html>");
         registerLabel.setBounds(0, 510, getWidth() - 10, 30);
         registerLabel.setFont(new Font("Dialog", Font.PLAIN, 20));
         registerLabel.setHorizontalAlignment(SwingConstants.CENTER);
         add(registerLabel);
-
     }
 }
