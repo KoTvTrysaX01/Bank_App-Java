@@ -53,10 +53,10 @@ public class RegisterGui extends BaseFrame{
         registerButton.setFont(new Font("Dialog", Font.BOLD, 20));
         add(registerButton);
 
-        JLabel registerLabel = new JLabel("<html><a href=\"#\">Don't have an account? Register here</a></html>");
-        registerLabel.setBounds(0, 510, getWidth() - 10, 30);
-        registerLabel.setFont(new Font("Dialog", Font.PLAIN, 20));
-        registerLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        add(registerLabel);
+        JLabel loginLabel = new JLabel("<html><a href=\"#\">Have an account? Sign-in here</a></html>");
+        loginLabel.setBounds(0, 510, getWidth() - 10, 30);
+        loginLabel.setFont(new Font("Dialog", Font.PLAIN, 20));
+        loginLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        add(loginLabel);
     }
 }
