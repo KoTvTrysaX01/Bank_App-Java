@@ -89,8 +89,11 @@ public class BankingAppGui extends BaseFrame implements ActionListener {
             if(buttonPressed.equalsIgnoreCase("Transfer")){
                 bankingAppDialog.addUserField();
             }
-            bankingAppDialog.setVisible(true);
 
+        }else if(buttonPressed.equalsIgnoreCase("Past Transaction")){
+            bankingAppDialog.addPastTransactionComponents();
         }
+
+        bankingAppDialog.setVisible(true);
     }
 }
